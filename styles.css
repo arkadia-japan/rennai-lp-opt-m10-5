@@ -159,18 +159,18 @@ img {
 .button {
   display: inline-block;
   padding: 16px 40px;
-  background: linear-gradient(135deg, #3c6bce 0%, #162d69 100%);
-  color: var(--color-white);
+  background: linear-gradient(135deg, #f0d46b 0%, #c19a2f 100%);
+  color: var(--color-deep-navy);
   border-radius: 999px;
   font-weight: 700;
   letter-spacing: 0.08em;
   transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
-  box-shadow: 0 26px 44px rgba(10, 23, 54, 0.4);
+  box-shadow: 0 26px 44px rgba(156, 123, 28, 0.4);
 }
 
 .button:hover {
   transform: translateY(-6px);
-  box-shadow: 0 34px 56px rgba(10, 23, 54, 0.48);
+  box-shadow: 0 34px 56px rgba(156, 123, 28, 0.45);
   filter: brightness(1.05);
 }
 
@@ -491,10 +491,11 @@ img {
   width: min(100%, var(--max-width));
   margin: 0 auto;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 24px;
-  flex-wrap: wrap;
+  gap: 18px;
   justify-content: center;
+  text-align: center;
 }
 
 .fixed-cta__copy {
@@ -503,6 +504,7 @@ img {
   gap: 8px;
   font-weight: 700;
   letter-spacing: 0.06em;
+  justify-content: center;
 }
 
 .fixed-cta__countdown {
@@ -514,7 +516,7 @@ img {
 .fixed-cta__note {
   margin: 0;
   font-size: 0.75rem;
-  width: 100%;
+  width: auto;
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -767,7 +769,7 @@ img {
   border-radius: 999px;
   border: none;
   cursor: pointer;
-  background: linear-gradient(120deg, #f6e18f 0%, #d5a838 50%, #f6e18f 100%);
+  background: linear-gradient(135deg, #f0d46b 0%, #c19a2f 100%);
   background-size: 200% 200%;
   color: var(--color-deep-navy);
   font-weight: 800;
