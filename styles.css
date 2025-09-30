@@ -345,13 +345,9 @@ img {
   color: var(--color-subtext);
   margin-top: 12px;
 }
-
-.cta-block__actions {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin-top: 16px;
+.cta-block__button {
+  display: inline-block;
+  margin-top: 24px;
 }
 
 .cta-block--gold {
