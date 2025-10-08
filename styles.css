@@ -422,6 +422,7 @@ img {
   border-radius: 18px;
 }
 
+
 .profile-card {
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(238, 242, 255, 0.92) 100%);
   border-radius: 26px;
@@ -432,30 +433,26 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
   display: grid;
-  grid-template-columns: minmax(0, 220px) 1fr;
+  grid-template-columns: minmax(0, 240px) 1fr;
   gap: 36px;
-  align-items: start;
+  align-items: center;
 }
 
 .profile-card__image {
   overflow: hidden;
-  border-radius: 22px;
-  position: relative;
-  box-shadow: 0 26px 44px rgba(18, 40, 86, 0.25);
-}
-
-.profile-card__image::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(15, 42, 102, 0.25) 100%);
-  pointer-events: none;
+  border-radius: 24px;
+  box-shadow: 0 26px 44px rgba(18, 40, 86, 0.22);
+  background: #0f2a66;
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 280px;
 }
 
 .profile-card__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  display: block;
 }
 
 .profile-card__body {
