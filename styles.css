@@ -433,9 +433,9 @@ img {
   border: 1px solid rgba(255, 255, 255, 0.7);
   backdrop-filter: blur(8px);
   display: grid;
-  grid-template-columns: minmax(0, 240px) 1fr;
-  gap: 36px;
-  align-items: center;
+  grid-template-columns: clamp(220px, 28%, 320px) minmax(0, 1fr);
+  gap: 40px;
+  align-items: start;
 }
 
 .profile-card__image {
@@ -446,6 +446,7 @@ img {
   aspect-ratio: 1 / 1;
   width: 100%;
   max-width: 280px;
+  margin: 0;
 }
 
 .profile-card__image img {
@@ -458,6 +459,8 @@ img {
 .profile-card__body {
   display: grid;
   gap: 18px;
+  position: relative;
+  z-index: 1;
 }
 
 .profile-card h3 {
