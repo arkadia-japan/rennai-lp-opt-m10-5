@@ -222,6 +222,11 @@ img {
   color: rgba(27, 27, 27, 0.88);
 }
 
+.section__text--compact {
+  margin-top: 4px;
+  margin-bottom: 18px;
+}
+
 .section__text--light {
   color: rgba(255, 255, 255, 0.88);
 }
