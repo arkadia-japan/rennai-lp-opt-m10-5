@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="grad-step3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fff2e7"/>
+      <stop offset="100%" stop-color="#ffd5b3"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" rx="26" fill="url(#grad-step3)"/>
+  <path d="M160 280c0-44 36-78 80-78 34 0 54 16 60 36 8-20 28-36 60-36 44 0 80 34 80 78 0 94-140 168-140 168S160 374 160 280z" fill="rgba(221,122,74,0.22)" stroke="#dd7a4a" stroke-width="10"/>
+  <text x="50%" y="46%" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#a24b24" font-weight="600">STEP 3 Visual</text>
+  <text x="50%" y="56%" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#b85c2c">Suggested: Couple building trust, warm atmosphere</text>
+</svg>

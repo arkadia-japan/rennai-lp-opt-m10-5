@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="600" viewBox="0 0 600 600">
+  <defs>
+    <linearGradient id="grad-step1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f0f4ff"/>
+      <stop offset="100%" stop-color="#d4dfff"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" rx="26" fill="url(#grad-step1)"/>
+  <path d="M180 420c40-100 100-200 120-240s60-60 90-40 40 80 20 130-80 150-80 150" fill="none" stroke="#5a74c5" stroke-width="12" stroke-linecap="round" stroke-dasharray="18 18"/>
+  <circle cx="300" cy="220" r="70" fill="rgba(90,116,197,0.18)"/>
+  <circle cx="220" cy="300" r="44" fill="rgba(90,116,197,0.12)"/>
+  <text x="50%" y="46%" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="32" fill="#30457b" font-weight="600">STEP 1 Visual</text>
+  <text x="50%" y="56%" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="22" fill="#3c4f8f">Suggested: Reflective man planning self-growth</text>
+</svg>
