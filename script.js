@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const closeModal = () => {
-      modal.classList.remove('is-open');
+      modal.classList.remove('is-active');
       modal.setAttribute('aria-hidden', 'true');
       body.classList.remove('modal-open');
       document.removeEventListener('keydown', handleKeydown);
@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const openModal = (event) => {
       event.preventDefault();
       previouslyFocusedElement = document.activeElement;
-      modal.classList.add('is-open');
+      modal.classList.add('is-active');
       modal.setAttribute('aria-hidden', 'false');
       body.classList.add('modal-open');
       setRefererFields();
@@ -330,3 +330,4 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('pagehide', disableTilt);
   }
 });
+
