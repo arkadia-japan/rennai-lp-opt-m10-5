@@ -46,19 +46,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   const modal = document.getElementById('form-modal');
-  const openButtons = document.querySelectorAll('.js-open-form');
+  const openButtons = Array.prototype.slice.call(document.querySelectorAll('.js-open-form'));
 
   if (modal && openButtons.length) {
     const body = document.body;
     const focusableSelector = 'a[href], button:not([disabled]), textarea, input:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])';
-    const closeTriggers = modal.querySelectorAll('[data-modal-close]');
+    const closeTriggers = Array.prototype.slice.call(modal.querySelectorAll('[data-modal-close]'));
     let previouslyFocusedElement = null;
 
     const setRefererFields = () => {
       const referer = document.referrer || '';
       const currentUrl = window.location.href;
-      const refererFields = modal.querySelectorAll('.UserRefererUrl');
-      const formUrlFields = modal.querySelectorAll('.UserRefererFormUrl');
+      const refererFields = Array.prototype.slice.call(modal.querySelectorAll('.UserRefererUrl'));
+      const formUrlFields = Array.prototype.slice.call(modal.querySelectorAll('.UserRefererFormUrl'));
 
       refererFields.forEach((field) => {
         field.value = referer;
@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const getFocusableElements = () => {
-      return Array.from(modal.querySelectorAll(focusableSelector)).filter(
+      return Array.prototype.slice.call(modal.querySelectorAll(focusableSelector)).filter(
         (el) => el.offsetParent !== null || modal === el
       );
     };
@@ -330,4 +330,3 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('pagehide', disableTilt);
   }
 });
-

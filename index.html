@@ -483,8 +483,8 @@
       const dialog = modal.querySelector('.form-modal__dialog');
       if (!dialog) return;
       const overlay = modal.querySelector('.form-modal__overlay');
-      const openButtons = document.querySelectorAll('.js-open-form');
-      const closeControls = modal.querySelectorAll('[data-modal-close]');
+      const openButtons = Array.prototype.slice.call(document.querySelectorAll('.js-open-form'));
+      const closeControls = Array.prototype.slice.call(modal.querySelectorAll('[data-modal-close]'));
       const focusableSelectors = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), [tabindex]:not([tabindex="-1"])';
       let previousActiveElement = null;
 
@@ -565,5 +565,4 @@
   </script>
 </body>
 </html>
-
 

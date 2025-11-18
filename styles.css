@@ -429,6 +429,10 @@ img {
   background: linear-gradient(180deg, #ffffff 0%, #f9fbff 100%);
 }
 
+.section.section--white {
+  --max-width: 1260px;
+}
+
 .section--blue {
   background: linear-gradient(135deg, #081a3f 0%, #040d1f 100%);
   color: var(--color-white);
@@ -609,6 +613,7 @@ img {
   opacity: 0.9;
   z-index: -1;
   animation: cardsAura 18s ease-in-out infinite alternate;
+  pointer-events: none;
 }
 
 .card {
@@ -677,6 +682,19 @@ img {
   box-shadow: 0 18px 32px rgba(15, 34, 82, 0.18);
   display: block;
   margin: 0 auto;
+}
+
+.section--white .card__image {
+  max-width: clamp(280px, 34vw, 420px);
+  margin: 0 auto 24px;
+}
+
+.section--white .card__image img {
+  max-width: none;
+}
+
+.section--white .card {
+  padding: 36px 28px;
 }
 
 .card h3 {
