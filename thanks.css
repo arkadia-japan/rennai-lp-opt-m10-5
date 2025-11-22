@@ -31,6 +31,10 @@ body {
   overflow-x: hidden;
 }
 
+.thanks-page {
+  padding-bottom: 0;
+}
+
 a {
   color: inherit;
   text-decoration: none;
